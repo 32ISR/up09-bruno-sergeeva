@@ -1,0 +1,24 @@
+info:
+  name: my-message
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: https://kitek.ktkv.dev/feedback/api/messages
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3NzUxNDUzNzkyMzMsInVzZXJuYW1lIjoiTGVyYSIsImlhdCI6MTc3NTE0NTQxNSwiZXhwIjoxNzc1MjMxODE1fQ.ogSDSVLXf0qLlVaqgE6pmjStoszQ0P0DgaswMGotQ6A
+  body:
+    type: json
+    data: |-
+      {
+          "content": "Текст сообщения (макс 500 символов)"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

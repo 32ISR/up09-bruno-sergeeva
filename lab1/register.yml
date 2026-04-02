@@ -1,0 +1,25 @@
+info:
+  name: register
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: https://kitek.ktkv.dev/feedback/api/auth/register
+  body:
+    type: json
+    data: |-
+      {
+          "username": "Lera",
+          "password": "admin2",
+          "email": "Lera@mail.ru"
+      }
+  auth:
+    type: bearer
+    token: ""
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+info:
+  name: messages
+  type: http
+  seq: 10
+
+http:
+  method: GET
+  url: https://kitek.ktkv.dev/feedback/api/messages
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
